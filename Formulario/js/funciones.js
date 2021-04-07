@@ -95,10 +95,8 @@ function valML(e) {
 input_ml.forEach(function (input) {
     input.addEventListener("blur", valML);
 });
-function limpiarDatos(e) {
-    e.target.reset();
-}
-formulario.addEventListener("button", limpiarDatos);
+
+
 formulario.addEventListener("submit", function (e) {
     if (campos["nombre"] == false) {
         alert("Ingrese nombre válido");
@@ -124,3 +122,7 @@ formulario.addEventListener("submit", function (e) {
     }
     e.preventDefault();
 });
+function limpiarDatos() {
+    formulario.reset();
+}
+;

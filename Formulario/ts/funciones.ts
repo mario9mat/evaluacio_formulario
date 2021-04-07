@@ -103,9 +103,9 @@ input_ml.forEach((input) =>{
     input.addEventListener("blur",valML);
 })
 
-function limpiarDatos(e:any) {
+/*function limpiarDatos(e:any) {
     e.target.reset();
-}
+}*/
 
 formulario.addEventListener("button",limpiarDatos);
 
@@ -134,6 +134,11 @@ formulario.addEventListener("submit", (e:any)=> {
     }
     e.preventDefault();
 });
+
+function limpiarDatos() {
+    formulario.reset();
+};
+
 
 
 
