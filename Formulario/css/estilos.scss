@@ -1,0 +1,55 @@
+ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 1em;
+}
+ul li{
+    text-align: left;
+}
+
+form{
+    text-align: center;
+    margin: 0px;
+    width: 63%;
+    background-color: #F335FF;
+}
+
+legend{
+    text-align: center;
+    font-size: 25px;
+}
+
+
+label{
+    display: inline-block;
+    text-align: left;
+    width: 120px ;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+textarea{
+    width: 400px;
+    height: 90px;
+    resize: none;
+}
+
+#descLab{
+    position: relative;
+    top: -68px;
+}
+
+#exp{
+    position: relative;
+    right: -40px;
+    top: -13px;
+}
+
+#telf{
+    position: relative;
+    top: -10px;
+}
+
+#mess{
+    display:none;
+}

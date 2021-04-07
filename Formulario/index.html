@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Formulario Profesional</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/estilos.css">
+    </head>
+    <body>
+        <script src="js/funciones.js" async defer></script>
+        <div id="mess"></div>
+        <form id="formulario" method="post">
+        <fieldset>
+        <legend><strong><u>Formulario Profesional</u></strong></legend><br><br>
+            
+            <ul>
+                <li>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" maxlength="25" required>
+                </li>
+                <li>
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" id="apellidos" maxlength="30" required>
+                </li>
+                <li>
+                    <label for="rut">RUT</label>
+                    <input type="text" id="rut"  placeholder="ej:12345678-9" maxlength="10" minlength="9" required>
+                </li>
+                <li>
+                    <label for="mail">Email</label>
+                    <input type="email" id="mail" placeholder="ejemplo@mail.com" required>
+                </li>
+                <li>
+                    <label for="telf">Número Telefónico</label>
+                    <input type="text" id="telf" placeholder="569XXXXXX" required minlength="9" maxlength="9"><br><br>
+                </li>
+                <li>
+                    <p>Seleccione Lenguajes Preferentes:</p><br>
+                    <input type="checkbox" id="leng" >
+                    <label for="leng">Python</label>  <br>                 
+                    <input type="checkbox" id="leng" >
+                    <label for="leng">Java</label> <br>                  
+                    <input type="checkbox" id="leng" >
+                    <label for="leng">TypeScript</label>         <br>          
+                    <input type="checkbox" id="leng" >
+                    <label for="leng">PHP</label>          <br>
+                    <input type="checkbox" id="leng" >
+                    <label for="leng">C#</label><br>
+                    <input type="checkbox" id="leng" >
+                    <label for="leng">C++</label><br><br>
+                </li>
+                <li>
+                    <label for="exp">Nivel de Conocimiento en Programación</label>
+                    <input type="range" id="exp" required><br><br>
+                </li>
+                <li>
+                    <p>¿Cuantos Años de Experiencia Laboral Tiene?</p><br>
+                    <input type="radio" id="años" required>
+                    <label for="años">1 Año</label>                   
+                    <input type="radio" id="años" required>
+                    <label for="años">2 Años</label>                   
+                    <input type="radio" id="años" required>
+                    <label for="años">3 Años</label>                   
+                    <input type="radio" id="años" required>
+                    <label for="años">4 Años</label>          
+                    <input type="radio" id="años" required>
+                    <label for="años">5 Años</label><br><br><br>
+                </li>
+                <li>
+                    <label for="desc" id="descLab">Describase Brevemente:</label>
+                    <textarea id="desc" maxlength="300" required></textarea><br><br><br>
+                </li>
+                <input type="submit" value="Enviar">
+                <input type="button" value="Limpiar Datos"> 
+                
+            </ul>
+        </fieldset>
+        </form>
+        
+    </body>
+</html>
